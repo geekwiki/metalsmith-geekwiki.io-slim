@@ -1,0 +1,9 @@
+---
+template: rss.hbt
+untemplatized: 1
+base: http://localhost:3333
+name: Geek Wiki
+title: Blog
+description: Our blog-style wiki about technology!
+image: http://localhost:3333/logo.jpg
+---

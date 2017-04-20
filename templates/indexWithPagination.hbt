@@ -1,0 +1,73 @@
+{{> header}}
+    <div class="container">
+
+    <!-- start each post -->
+    {{#each pagination.files}}
+    <article class="box-post">
+
+      {{#if this.featured_image}}
+      <div class="box-alpha">
+
+        <figure class="featured-image">
+          <a href="{{baseUrl}}/{{this.path}}/index.html">
+            <img src="{{this.featured_image}}" width="767" height="431" srcset="{{this.featured_image}} 767w, {{this.featured_image}} 1534w" sizes="(max-width: 767px) 100vw, 767px" alt="Interior man" />
+            <img src="{{this.featured_image}}" width="350" height="420" srcset="{{this.featured_image}} 350w, {{this.featured_image}} 700w" sizes="(max-width: 767px) 100vw, 350px" alt="Interior man" />
+          </a>
+        </figure>
+
+      </div><!-- // .box-alpha -->
+      {{/if}}
+
+      <div class="box-beta">
+
+        <ul class="tags">
+          <li class="tag-timestamp">{{ dateFormat this.date }}</li>
+          {{#each this.tags }}
+            <li class="tag-category"><a href="{{baseUrl}}/tags/{{this}}.html"><span data-hover="{{this}}">{{this}}</span></a></li>
+          {{/each}}
+        </ul>
+
+        <div class="box-content">
+
+          <h2 class="box-title"><a href="{{baseUrl}}/{{this.path}}/index.html">{{this.title}}</a></h2>
+
+        </div><!-- // .box-content -->
+
+        <div class="meta">
+          <div class="share">
+            <span>Share:</span>
+            <ul>
+              <li><a data-icon="facebook" href="#"></a></li>
+              <li><a data-icon="twitter" href="#"></a></li>
+              <li><a data-icon="googleplus" href="#"></a></li>
+              <li><a data-icon="pinterest" href="#"></a></li>
+              <li><a data-icon="email" href="#"></a></li>
+            </ul>
+          </div>
+          <a class="more-link" href="{{baseUrl}}/{{this.path}}/index.html"><span data-hover="More">More</span></a>
+        </div><!-- // .meta -->
+
+      </div><!-- // .box-beta -->
+
+    </article><!-- // .box-post -->
+    {{/each}}
+    <!-- end each post -->
+
+        <nav class="pagination">
+          <div>
+            {{#if pagination.previous}}
+              <h5><a href="{{baseUrl}}/{{pagination.previous.path}}">Prev</a></h5>
+            {{/if}}
+            {{#each pagination.pages}}
+              <h5><a href="{{baseUrl}}/{{this.path}}">{{this.pagination.num}}</a></h5>
+            {{/each}}
+            {{#if pagination.next}}
+              <h5><a href="{{baseUrl}}/{{pagination.next.path}}">Next</a></h5>
+            {{/if}}
+          </div>
+        </nav><!-- // .pagination -->
+
+  </div><!-- // .container -->
+
+
+{{> footer}}

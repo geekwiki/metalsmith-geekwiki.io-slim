@@ -1,0 +1,66 @@
+<footer id="footer">
+
+  <div class="container">
+
+    <div class="end-note">
+
+      <div class="align-left">
+        <p>&copy; Your name here, 2017</p>
+      </div>
+
+      <div class="align-right">
+
+        <div class="share featured">
+          <ul>
+            <li><a data-icon="facebook" href="#"></a></li>
+            <li><a data-icon="twitter" href="#"></a></li>
+            <li><a data-icon="youtube" href="#"></a></li>
+          </ul>
+        </div><!-- // .share -->
+
+      </div>
+
+      <a class="back" href="#wrapper" title="Back to top"></a>
+
+    </div><!-- // .end-note -->
+
+  </div><!-- // .container -->
+
+</footer>
+
+</div><!-- // #wrapper -->
+
+<div id="log-in-form" class="modal">
+
+<div class="modal-content">
+
+  <img src="content/neutral/thumbs/logo-212x83.png" width="212" height="83" srcset="content/neutral/thumbs/logo-212x83.png 212w, content/neutral/thumbs/logo-424x166.png 424w" sizes="(max-width: 212px) 100vw, 212px" class="align-center" alt="Logo" />
+
+  <form action="#filename" method="post">
+
+    <p><input type="email" placeholder="e-mail" class="width-full" required /></p>
+    <p><input type="password" placeholder="password" class="width-full" required /></p>
+    <p><input type="submit" class="width-full" value="Log in" /></p>
+
+    <p class="form-links">
+      <a href="#filename">Sign up &rsaquo;</a>
+      <a href="#filename">Forget password?</a>
+    </p>
+
+  </form>
+
+</div><!-- // .modal-content -->
+
+<a class="close"></a>
+
+</div><!-- // #log-in-form.modal -->
+
+<script src="components/jquery/jquery.min.js"></script>
+<script src="js/app.min.js"></script>
+
+<script>
+new Live;
+</script>
+
+</body>
+</html>

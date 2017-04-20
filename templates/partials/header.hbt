@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js no-touch" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="msapplication-TileImage" content="content/live/thumbs/favicon-270x270.png" />
+		<link rel="icon" href="content/live/thumbs/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" href="content/live/thumbs/favicon-192x192.png" sizes="192x192" />
+		<link rel="apple-touch-icon-precomposed" href="content/live/thumbs/favicon-180x180.png" />
+		<link rel="stylesheet" href="{{baseUrl}}/css/style-neutral.min.css" />
+		<link rel="stylesheet" href="{{baseUrl}}/css/typo-open-sans-pt-sans-narrow.min.css" />
+		<title>Geek Wiki</title>
+	</head>
+	<body>
+
+		<div id="wrapper">
+
+			<header id="header">
+
+				<div class="container">
+
+					<div class="main vertical-align-middle horizontal-align-center">
+
+						<div class="logo">
+							<a href="{{baseUrl}}" title="Geek Wiki Home">
+								<img src="{{baseUrl}}/{{logo}}" width="247" height="97" srcset="{{baseUrl}}/{{logo}} 247w, {{baseUrl}}/{{logo}} 494w" sizes="(max-width: 247px) 100vw, 247px" alt="Geek Wiki Logo" />
+							</a>
+						</div><!-- // .logo -->
+            <nav class="dark">
+							<ul>
+								<li><a href="{{baseUrl}}">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="content.html">Content</a></li>
+								<li class="media-regular-none-important"><a href="articles.html">View Articles</a></li>
+								<li class="media-regular-none-important"><a href="publish.html">Publish Article</a></li>
+							</ul>
+						</nav>
+
+						<nav class="dark">
+							<ul>
+								<li><a href="neutral-typography.html">Typography</a></li>
+								<li><a href="neutral-gallery-classic.html">Gallery</a></li>
+								<li>
+									<a href="#">Pages</a>
+									<ul>
+										<li><a href="neutral-video.html">Video</a></li>
+										<li>
+											<a href="neutral-gallery-classic.html">Galleries</a>
+											<ul>
+												<li><a href="neutral-gallery-classic.html">Classic</a></li>
+												<li><a href="neutral-gallery-with-sidebar.html">With sidebar</a></li>
+												<li><a href="neutral-gallery-masonry.html">Masonry</a></li>
+											</ul>
+										</li>
+										<li><a href="neutral-widgets.html">Widgets</a></li>
+										<li><a href="neutral-contact.html">Contact</a></li>
+										<li><a href="neutral-about.html">About</a></li>
+										<li><a href="#log-in-form">Log in form</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+					</div><!-- // .main -->
+
+				</div><!-- // .container -->
+
+			</header>
